@@ -11,6 +11,8 @@ API Rest protegido con SpringSecurity usando Json Web Token(JWT) y la capa repos
 
 ## Maven
 ```
+git clone https://github.com/rogergith/springbootEmpresaProducto.git
+cd springbootEmpresaProducto
 mvn spring-boot:run
 ```
 
