@@ -73,8 +73,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     	httpSecurity.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
     	httpSecurity.authorizeRequests()
-            // Un-secure H2 Database
-            //.antMatchers("/h2-console/**/**").permitAll()
             .antMatchers("/empresa").hasAnyRole("ADMIN", "USER")
             .antMatchers("/producto").hasAnyRole("ADMIN", "USER")
             .antMatchers("/vendedor").hasAnyRole("ADMIN", "USER")
